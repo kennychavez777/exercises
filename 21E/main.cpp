@@ -1,6 +1,6 @@
 /**
 **  Author: Kenny Chavez
-**  Desctiption: Ejercicio 21,
+**  Desctiption: Ejercicio 21, calculo de x1 y x2
 **/
 
 #include <iostream>
@@ -9,22 +9,18 @@ using namespace std;
 
 int main()
 {
-    double a, b, c, x1, x2, k1;
-    cout << "a: ";
+    double a, b, c, x1, x2; // Declaracion de todas las variables del flujo del programa
+    cout << "a: "; // Se pide A
     cin >> a;
-    cout << "b: ";
+    cout << "b: "; // Se pide B
     cin >> b;
-    cout << "c: ";
+    cout << "c: "; // Se pide C
     cin >> c;
 
-    //x1 = -b + (sqrt(pow(b, 2) - (4 * a * c))) / 2 * a;
-    //x2 = -b - (sqrt(pow(b, 2) - (4 * a * c))) / 2 * a;
+    x1 = (-b + (sqrt(pow(b, 2) - (4 * a * c)))) / (2 * a); // Se hace el calculo de x1
+    x2 = (-b - (sqrt(pow(b, 2) - (4 * a * c)))) / (2 * a); // Se hace el calculo de x2
 
-    k1 = (b * b) - (4 * a * c);
-    x1 = (-b + sqrt(k1)) / (2 * a);
-    x2 = sqrt((b * b) - (4 * a * c));
-
-    cout << "X1: " << x1 << endl;
-    cout << "X2: " << x2 << endl;
+    cout << "X1: " << x1 << endl; // Se muestra x1
+    cout << "X2: " << x2 << endl; // Se muestra x2
     return 0;
 }
